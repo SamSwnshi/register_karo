@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <button>See all the Services</button>
+      <button className="border px-4 py-2 flex items-center justify-center">See all the Services</button>
       <hr />
       <div>
         <div className="icons"></div>
@@ -82,16 +82,16 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         <p>
           By continuing this page, you agree to our Terms & Conditions, Privacy
           Policy and Refund Policy.
         </p>
         <p>© 2025 - Safe Ledger Private Limited. All rights reserved.</p>
-        <p>
+        <p className="">
           Please note that we are a facilitating platform enabling access to
           reliable professionals. We are not a law firm and do not provide legal
-          services ourselves. The information on this website is for the purpose
+          services ourselves. The information on this website is for the  purpose
           of knowledge only and should not be relied upon as legal advice or
           opinion.
         </p>
