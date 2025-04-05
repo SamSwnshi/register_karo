@@ -2,7 +2,7 @@ import React from 'react'
 
 const LatestBlog = () => {
   return (
-    <div>
+    <div className="px-28 h-screen">
       
     </div>
   )
