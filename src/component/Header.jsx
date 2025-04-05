@@ -3,8 +3,8 @@ import Register from "../assets/register.png"
 
 const Header = () => {
   return (
-    <div className='h-20 border-1 tracking-wider sticky'>
-      <div className='flex items-center justify-between px-28 py-3'>
+    <div className='h-20 border-1 tracking-wider sticky px-28 py-3'>
+      <div className='flex items-center justify-between '>
         <div>
           <img src={Register} alt="logo" className='w-54'/>
         </div>
