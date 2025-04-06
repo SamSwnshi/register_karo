@@ -1,31 +1,80 @@
-import React from 'react'
+import React from 'react';
 
 const Card = () => {
-
   return (
-    <div className='px-28 bg-[#164C6E] w-full h-96 flex items-center gap-2'>
-      <div className='flex h-56 items-center rounded-xl justify-center bg-white'>
-        <div className=' border flex flex-col justify-between items-center'>
-          <p>Small business & Startup Accounts</p>
-          <p>Make sure your business meets its statutory requirements.</p>
+    <div className="bg-[#164C6E] px-6 md:px-28 py-16 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Card 1 */}
+        <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Small business & Startup Accounts
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Make sure your business meets its statutory requirements.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-sm text-gray-800">Number of employees</p>
+            <p className="text-gray-800 font-bold">0 – 10</p>
+          </div>
+          <div className="mt-4 text-right text-orange-500 text-xl">→</div>
         </div>
-        <hr />
-        <div>
-          <p>Growing Business Package</p>
-          <p>Additional support to help you reach your business goals</p>
-        </div>
-        <div>
-          <p>Scale-Up Company Offer</p>
-          <p>Compliance, reporting & analysis of performance.</p>
-        </div>
-      </div>
-      <div className='flex h-56 items-center rounded-xl justify-center bg-white flex-col'>
-        <p>Setting up a business</p>
-        <p>Make sure your business meets its statutory requirements.</p>
 
+        {/* Card 2 */}
+        <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Growing Business Package
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Additional support to help you reach your business goals.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-sm text-gray-800">Number of employees</p>
+            <p className="text-gray-800 font-bold">11 – 50</p>
+          </div>
+          <div className="mt-4 text-right text-orange-500 text-xl">→</div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Scale-Up Company Offer
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Compliance, reporting & analysis of performance.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-sm text-gray-800">Number of employees</p>
+            <p className="text-gray-800 font-bold">50+</p>
+          </div>
+          <div className="mt-4 text-right text-orange-500 text-xl">→</div>
+        </div>
+
+        {/* Card 4 */}
+        <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Setting up a business
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Make sure your business meets its statutory requirements.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-sm text-gray-800">
+              Company Formation Services
+            </p>
+          </div>
+          <div className="mt-4 text-right text-orange-500 text-xl">→</div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
