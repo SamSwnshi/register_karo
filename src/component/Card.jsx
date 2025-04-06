@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <div className="bg-[#164C6E] px-6 md:px-28 py-16 w-full">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Card 1 */}
+ 
         <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -21,7 +21,7 @@ const Card = () => {
           <div className="mt-4 text-right text-orange-500 text-xl">→</div>
         </div>
 
-        {/* Card 2 */}
+
         <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -38,7 +38,7 @@ const Card = () => {
           <div className="mt-4 text-right text-orange-500 text-xl">→</div>
         </div>
 
-        {/* Card 3 */}
+
         <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -55,7 +55,7 @@ const Card = () => {
           <div className="mt-4 text-right text-orange-500 text-xl">→</div>
         </div>
 
-        {/* Card 4 */}
+
         <div className="bg-white rounded-xl p-6 flex flex-col justify-between h-full shadow-md">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">

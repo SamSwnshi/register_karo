@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div className="px-6 md:px-28 py-16 bg-white relative overflow-hidden">
       <div className="flex flex-col md:flex-row items-center justify-between">
-        {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
           <p className="text-lg font-medium text-gray-700">
             We take care of ALL your business compliance needs
@@ -24,22 +23,22 @@ const Home = () => {
           </button>
         </div>
 
-        {/* Hero Image with Stats */}
+
         <div className="relative mt-10 md:mt-0 md:w-1/2 flex justify-end items-end">
-          {/* Orange Polygon Background */}
+
           <div className="absolute -z-10 top-0 right-0 w-[300px] h-[420px] bg-[#FE9C28] rounded-bl-[90px] rotate-[0deg]"></div>
 
-          {/* Dotted pattern (top right) */}
+
           <div className="absolute top-0 right-24 w-20 h-20 grid grid-cols-4 gap-1 opacity-60">
             {Array.from({ length: 16 }).map((_, i) => (
               <div key={i} className="w-2 h-2 bg-[#1A365D] rounded-full" />
             ))}
           </div>
 
-          {/* Hero Image */}
+
           <img src={heroImg} alt="Hero" className="w-[300px] h-auto z-10" />
 
-          {/* Stats Cards */}
+
           <div className="absolute top-10 right-[160px] bg-white shadow-lg rounded-lg p-4 w-36 text-center">
             <p className="text-2xl font-bold">500+</p>
             <p className="text-xs text-gray-500 mt-1">Businesses Incorporated Every Month</p>

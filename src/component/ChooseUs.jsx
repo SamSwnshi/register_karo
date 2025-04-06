@@ -6,18 +6,18 @@ const ChooseUs = () => {
   return (
     <div className="bg-blue-100 py-16 px-6 md:px-24">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* Left Side Image */}
+
         <div className="relative flex justify-center w-full md:w-1/2">
           <img src={model} alt="Expert" className="w-[300px] md:w-[350px]" />
           
-          {/* Mobile Card */}
+
           <div className="absolute bottom-0 left-8 bg-white rounded-xl shadow-lg p-3 px-4 text-center text-sm">
             <p className="font-semibold">100+ Ratings</p>
             <p className="text-gray-500">Trusted by 20,000+ clients</p>
           </div>
         </div>
 
-        {/* Right Side Text + Feature List */}
+
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-orange-500 font-bold text-2xl mb-4">WHY CHOOSE US</h1>
           <p className="text-gray-700 mb-1">

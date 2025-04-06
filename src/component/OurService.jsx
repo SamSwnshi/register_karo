@@ -46,12 +46,12 @@ const OurService = () => {
 
   return (
     <div className="bg-white px-6 md:px-20 py-16">
-      {/* Heading */}
+
       <div className="text-center mb-12">
         <h1 className="text-[#FE9C28] font-bold text-3xl md:text-4xl">OUR SERVICES</h1>
       </div>
 
-      {/* Services Grid */}
+
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center">
         {data.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center text-center gap-4">
@@ -63,10 +63,10 @@ const OurService = () => {
         ))}
       </div>
 
-      {/* Divider */}
+
       <hr className="w-1/2 mx-auto border-gray-300 my-12" />
 
-      {/* Bottom Text Section */}
+
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <p className="text-gray-700">
