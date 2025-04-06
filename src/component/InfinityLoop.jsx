@@ -45,7 +45,7 @@ const InfinityLoop = () => {
     },
   ]
   return (
-    <div className='bg-blue-100 h-screen flex flex-col items-center justify-center'>
+    <div className='bg-[#F0F4FF] h-screen flex flex-col items-center justify-center'>
       <div className='flex flex-col items-center'>
         <p>We partner with the best,
           so that your business can flow seamlessly.</p>

@@ -3,9 +3,9 @@ import React from 'react'
 const Card = () => {
 
   return (
-    <div className='px-28 bg-red-700 w-full h-96 flex items-center gap-2'>
+    <div className='px-28 bg-[#164C6E] w-full h-96 flex items-center gap-2'>
       <div className='flex h-56 items-center rounded-xl justify-center bg-white'>
-        <div>
+        <div className=' border flex flex-col justify-between items-center'>
           <p>Small business & Startup Accounts</p>
           <p>Make sure your business meets its statutory requirements.</p>
         </div>

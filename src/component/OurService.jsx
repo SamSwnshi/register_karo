@@ -44,31 +44,42 @@ const OurService = () => {
     },
   ];
   return (
-    <div className="h-screen ">
+    <div className="px-34 h-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <div>
-          <h1>OUR SERVICES</h1>
+          <h1 className="text-[#FE9C28] font-semibold text-4xl mb-10">
+            OUR SERVICES
+          </h1>
         </div>
         <div>
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4 h-full gap-20">
             {data.map((item, idx) => (
-              <div key={idx} className="flex flex-col items-center border-2">
-                <div className="w-24 border-2">
+              <div key={idx} className="flex flex-col items-center gap-6 ">
+                <div className="w-24 shadow-2xl rounded-md">
                   <img src={item.img} alt="" />
                 </div>
-                <p>{item.name}</p>
+                <div >
+                  <p className="" >
+                    {item.name}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
-        <hr className="border w-1/2 border-gray-300 my-4"/>
-        <div className="w-full flex justify-evenly">
-          <div>
-            <p>Our Client Services Team is always happy to talk to you about what is best for<br/> your needs. Contact our team to find out if we are the right fit for you.</p>
+        <hr className="w-1/2 border-gray-300 my-4 mt-8" />
+        <div className="w-full h-13 flex justify-between mt-8 ">
+          <div className="gap-1 flex flex-col">
+            <p>
+              Our Client Services Team is always happy to talk to you about what
+              is best for
+            </p>
+            <p>your needs. Contact our team to find out if we are the
+            right fit for you.</p>
           </div>
-            <div>
-              <p>Explore our services </p>
-            </div>
+          <div className="flex items-end">
+            <p className="text-[#FE9C28] hover:text-orange-600 cursor-pointer">Explore our services </p>
+          </div>
         </div>
       </div>
     </div>

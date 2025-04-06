@@ -3,7 +3,7 @@ import heroImg from "../assets/hero_model.webp"
 
 const Home = () => {
   return (
-    <div className="px-28 border-b-1 h-[600px] ">
+    <div className="px-34 border-b-1 h-[600px] ">
       <div className="flex items-center justify-between">
         <div>
           <p>We take care of ALL your business compliance needs</p>
@@ -17,7 +17,7 @@ const Home = () => {
             other individuals with various, registrations, tax filings, and
             other legal matters.
           </p>
-          <button>Get Started</button>
+          <button className="bg-[#FE9C28]">Get Started</button>
         </div>
         <div>
           <img src={heroImg} alt="" />

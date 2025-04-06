@@ -5,7 +5,7 @@ import collage2 from "../assets/img3.jpeg"
 
 const Whatwedo = () => {
   return (
-    <div className="px-28 flex items-center justify-center h-screen">
+    <div className="px-28 bg-[#F0F4FF]  flex items-center justify-center h-screen">
       <div className="w-1/2">
         <p>WHAT WE DO</p>
         <p>Receive support at every stage of business development.</p>
