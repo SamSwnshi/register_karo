@@ -3,16 +3,16 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   theme: {
     extend: {
-      animation: {
-        "loop-scroll": "loop-scroll 50s linear infinite"
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
-      keyframe: {
-        "loop-scroll": {
-          from : {transform: "translateX(0)"},
-          to: {transform: "translateX(-100%)"}
-        }
-      }
-    }
+      animation: {
+        scroll: "scroll 25s linear infinite",
+      },
+    },
   },
   plugins: [tailwindcss()],
   base: "/",

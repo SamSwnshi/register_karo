@@ -5,7 +5,7 @@ import Photos from './Photos'
 
 const Partner = () => {
   return (
-    <div className='h-screen'>
+    <div >
       <InfinityLoop/>
       <Whatwedo/>
       <Photos/>
