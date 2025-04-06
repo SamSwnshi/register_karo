@@ -27,7 +27,7 @@ const OurService = () => {
       img: annual,
     },
     {
-      name: "VAT Registration,Preparation & Filing",
+      name: "VAT Registration, Preparation & Filing",
       img: gst,
     },
     {
@@ -43,43 +43,42 @@ const OurService = () => {
       img: live,
     },
   ];
+
   return (
-    <div className="px-34 h-screen flex items-center justify-center">
-      <div className="flex flex-col items-center justify-center">
-        <div>
-          <h1 className="text-[#FE9C28] font-semibold text-4xl mb-10">
-            OUR SERVICES
-          </h1>
+    <div className="bg-white px-6 md:px-20 py-16">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h1 className="text-[#FE9C28] font-bold text-3xl md:text-4xl">OUR SERVICES</h1>
+      </div>
+
+      {/* Services Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center">
+        {data.map((item, idx) => (
+          <div key={idx} className="flex flex-col items-center text-center gap-4">
+            <div className="w-20 h-20 flex items-center justify-center rounded-full bg-white shadow-lg">
+              <img src={item.img} alt={item.name} className="w-12 h-12 object-contain" />
+            </div>
+            <p className="text-sm md:text-base text-gray-800">{item.name}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Divider */}
+      <hr className="w-1/2 mx-auto border-gray-300 my-12" />
+
+      {/* Bottom Text Section */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="text-center md:text-left">
+          <p className="text-gray-700">
+            Our Client Services Team is always happy to talk to you about what is best for
+            your needs. <br className="hidden md:block" />
+            Contact our team to find out if we are the right fit for you.
+          </p>
         </div>
-        <div>
-          <div className="grid grid-cols-4 h-full gap-20">
-            {data.map((item, idx) => (
-              <div key={idx} className="flex flex-col items-center gap-6 ">
-                <div className="w-24 shadow-2xl rounded-md">
-                  <img src={item.img} alt="" />
-                </div>
-                <div >
-                  <p className="" >
-                    {item.name}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <hr className="w-1/2 border-gray-300 my-4 mt-8" />
-        <div className="w-full h-13 flex justify-between mt-8 ">
-          <div className="gap-1 flex flex-col">
-            <p>
-              Our Client Services Team is always happy to talk to you about what
-              is best for
-            </p>
-            <p>your needs. Contact our team to find out if we are the
-            right fit for you.</p>
-          </div>
-          <div className="flex items-end">
-            <p className="text-[#FE9C28] hover:text-orange-600 cursor-pointer">Explore our services </p>
-          </div>
+        <div className="text-center md:text-right">
+          <p className="text-[#FE9C28] hover:text-orange-600 cursor-pointer font-medium">
+            Explore our services
+          </p>
         </div>
       </div>
     </div>

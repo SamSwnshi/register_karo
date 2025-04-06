@@ -1,23 +1,42 @@
-import React from 'react'
-import down from "../assets/down.png"
-import up from "../assets/up.png"
-import man from "../assets/man.png"
-import people from '../assets/people.png'
-import growth from '../assets/growth.png'
+import React from 'react';
+import down from "../assets/down.png";
+import up from "../assets/up.png";
+import man from "../assets/man.png";
+import people from '../assets/people.png';
+import growth from '../assets/growth.png';
 
 const Photos = () => {
   return (
-    <div className=' h-96 flex items-center justify-center bg-[#F0F4FF]'>
-      <div className='flex  w-full h-24 items-center justify-center  gap-5'>
-        <img src={man} alt="" className='w-22 bg-[#164760] rounded' />
-        <img src={down} alt="" className=' '/>
-        <img src={people} alt="" className='w-22 bg-[#FE9C28] rounded' />
-        <img src={up} alt="" />
-        <img src={growth} alt="" className='w-22 bg-[#164760] rounded' />
-
+    <div className="bg-[#F0F4FF] py-10">
+      <div className="flex flex-wrap justify-center items-center gap-6 px-4">
+        <img
+          src={man}
+          alt="man"
+          className="w-20 sm:w-24 md:w-28 lg:w-32 bg-[#164760] rounded shadow-md"
+        />
+        <img
+          src={down}
+          alt="down"
+          className="w-8 sm:w-10 md:w-48"
+        />
+        <img
+          src={people}
+          alt="people"
+          className="w-20 sm:w-24 md:w-28 lg:w-32 bg-[#FE9C28] rounded shadow-md"
+        />
+        <img
+          src={up}
+          alt="up"
+          className="w-8 sm:w-10 md:w-48"
+        />
+        <img
+          src={growth}
+          alt="growth"
+          className="w-20 sm:w-24 md:w-28 lg:w-32 bg-[#164760] rounded shadow-md"
+        />
       </div>
-    </div> 
-  )
-}
+    </div>
+  );
+};
 
-export default Photos
+export default Photos;
