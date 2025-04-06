@@ -51,7 +51,7 @@ const InfinityLoop = () => {
           so that your business can flow seamlessly.</p>
           <p>Your Business needs numerous expertise and that's why we are providing you the best services with the best names in the field .</p>
       </div>
-      <div className='flex items-center gap-8 space-x-16 animate-loop-scroll'>
+      <div className='flex items-center gap-8 space-x-12 animate-loop-scroll'>
         {company.map((items,idx)=>(
           <div key={idx} className='shadow-md w-20 h-20 flex items-center justify-center bg-white rounded'>
             <img src={items.image} alt="logo" className='w-15'/>
